@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:spotify_clone/data/data.dart';
 import 'package:spotify_clone/models/current_track_model.dart';
 import 'package:spotify_clone/screens/playlist_screen.dart';
+import 'package:spotify_clone/widgets/current_track.dart';
 import 'package:spotify_clone/widgets/side_menu.dart';
 
 void main() async {
@@ -64,12 +65,14 @@ class MyApp extends StatelessWidget {
               letterSpacing: 1.0,
             )),
       ),
-      home: Shell(),
+      home: const Shell(),
     );
   }
 }
 
 class Shell extends StatelessWidget {
+  const Shell({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,11 +90,7 @@ class Shell extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            height: 84.0,
-            width: double.infinity,
-            color: Colors.blue,
-          ),
+          CurrentTrack(),
         ],
       ),
     );
