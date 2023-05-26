@@ -18,6 +18,7 @@ class TracksList extends StatelessWidget {
         DataColumn(label: Text('TITLE')),
         DataColumn(label: Text('ARTIST')),
         DataColumn(label: Text('ALBUM')),
+        DataColumn(label: Text('')),
         DataColumn(label: Icon(Icons.access_time)),
       ],
       rows: tracks.map(
@@ -47,6 +48,9 @@ class TracksList extends StatelessWidget {
                   e.album,
                   style: textStyle,
                 ),
+              ),
+              const DataCell(
+                Icon(Icons.favorite_rounded, color: Colors.green),
               ),
               DataCell(
                 Text(

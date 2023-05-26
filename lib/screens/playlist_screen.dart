@@ -107,7 +107,7 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
               const Color.fromARGB(255, 74, 51, 167),
               Theme.of(context).colorScheme.background
             ],
-            stops: const [0, 0.3],
+            stops: const [0, 0.45],
           ),
         ),
         child: Scrollbar(

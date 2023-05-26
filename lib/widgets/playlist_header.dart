@@ -24,7 +24,7 @@ class PlaylistHeader extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'PLAYLIST',
+                    'Playlist',
                     style: Theme.of(context)
                         .textTheme
                         .labelSmall!
@@ -38,12 +38,12 @@ class PlaylistHeader extends StatelessWidget {
                   const SizedBox(height: 16.0),
                   Text(
                     playlist.description,
-                    style: Theme.of(context).textTheme.titleMedium,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                   const SizedBox(height: 16.0),
                   Text(
                     'Created by ${playlist.creator} · ${playlist.songs.length} songs, ${playlist.duration}',
-                    style: Theme.of(context).textTheme.titleMedium,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                 ],
               ),
@@ -69,18 +69,18 @@ class _PlaylistButtons extends StatelessWidget {
           style: TextButton.styleFrom(
             foregroundColor: Theme.of(context).iconTheme.color,
             padding:
-                const EdgeInsets.symmetric(horizontal: 48.0, vertical: 20.0),
+                const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20.0),
+              borderRadius: BorderRadius.circular(50.0),
             ),
             backgroundColor: Theme.of(context).colorScheme.secondary,
-            textStyle: Theme.of(context)
-                .textTheme
-                .bodySmall!
-                .copyWith(fontSize: 12.0, letterSpacing: 2.0),
           ),
           onPressed: () {},
-          child: const Text('PLAY'),
+          child: const Icon(
+            Icons.play_arrow,
+            color: Colors.black,
+            size: 30,
+          ),
         ),
         const SizedBox(width: 8.0),
         IconButton(

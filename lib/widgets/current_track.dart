@@ -33,7 +33,7 @@ class _TrackInfo extends StatelessWidget {
     return Row(
       children: [
         Image.asset(
-          'assets/liked-songs.png',
+          selected.image,
           height: 60.0,
           width: 60.0,
           fit: BoxFit.cover,
@@ -63,7 +63,7 @@ class _TrackInfo extends StatelessWidget {
         ),
         const SizedBox(width: 12.0),
         IconButton(
-          icon: const Icon(Icons.favorite_border),
+          icon: const Icon(Icons.favorite_rounded, color: Colors.green),
           onPressed: () {},
         ),
       ],
@@ -161,7 +161,7 @@ class _MoreControls extends StatelessWidget {
               height: 5.0,
               width: 70.0,
               decoration: BoxDecoration(
-                color: Colors.grey[800],
+                color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(
                   2.5,
                 ),
