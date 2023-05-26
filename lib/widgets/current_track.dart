@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:spotify_clone/models/current_track_model.dart';
 
 class CurrentTrack extends StatelessWidget {
+  const CurrentTrack({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -124,8 +126,9 @@ class _PlayerControls extends StatelessWidget {
               height: 5.0,
               width: MediaQuery.of(context).size.width * 0.3,
               decoration: BoxDecoration(
-                  color: Colors.grey[800],
-                  borderRadius: BorderRadius.circular(2.5)),
+                color: Colors.grey[800],
+                borderRadius: BorderRadius.circular(2.5),
+              ),
             ),
             const SizedBox(
               width: 8.0,

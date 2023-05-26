@@ -43,27 +43,28 @@ class MyApp extends StatelessWidget {
         iconTheme: const IconThemeData().copyWith(color: Colors.white),
         fontFamily: 'Montserrat',
         textTheme: const TextTheme(
-            displayMedium: TextStyle(
-              color: Colors.white,
-              fontSize: 70.0,
-              fontWeight: FontWeight.bold,
-            ),
-            headlineMedium: TextStyle(
-              fontSize: 12.0,
-              color: Color(0xFFE0E0E0),
-              fontWeight: FontWeight.w500,
-              letterSpacing: 2.0,
-            ),
-            bodyLarge: TextStyle(
-              color: Color(0xFFE0E0E0),
-              fontSize: 14.0,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 1.0,
-            ),
-            bodyMedium: TextStyle(
-              color: Color(0xFFE0E0E0),
-              letterSpacing: 1.0,
-            )),
+          displayMedium: TextStyle(
+            color: Colors.white,
+            fontSize: 70.0,
+            fontWeight: FontWeight.bold,
+          ),
+          headlineMedium: TextStyle(
+            fontSize: 12.0,
+            color: Color(0xFFE0E0E0),
+            fontWeight: FontWeight.w500,
+            letterSpacing: 2.0,
+          ),
+          bodyLarge: TextStyle(
+            color: Color(0xFFE0E0E0),
+            fontSize: 14.0,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 1.0,
+          ),
+          bodyMedium: TextStyle(
+            color: Color(0xFFE0E0E0),
+            letterSpacing: 1.0,
+          ),
+        ),
       ),
       home: const Shell(),
     );
@@ -90,7 +91,7 @@ class Shell extends StatelessWidget {
               ],
             ),
           ),
-          CurrentTrack(),
+          const CurrentTrack(),
         ],
       ),
     );

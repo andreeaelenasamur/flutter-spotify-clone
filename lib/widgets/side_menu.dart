@@ -17,7 +17,7 @@ class SideMenu extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Image.asset(
-                  'assets/spotify_logo.png',
+                  'assets/spotify.png',
                   height: 55.0,
                   filterQuality: FilterQuality.medium,
                 ),
