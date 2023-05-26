@@ -1,16 +1,26 @@
 # Flutter Spotify Clone
 
-A new Flutter project.
+## What is the project about?
 
-## Getting Started
+This project consists of a copy of Spotify.
 
-This project is a starting point for a Flutter application.
+# Before starting the project
 
-A few resources to get you started if this is your first Flutter project:
+This guide covers preparing the environment on a Linux operating system.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Preparation of the environment
+Essential requirement to have Flutter installed.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Start the project
+  1. Clone the project.
+  
+  2. Open a terminal in the project directory and run `flutter pub get`.
+  
+  3. Run `flutter run` to start the project.
+  
+  4. This project is made for a Linux desktop, so you have to have Linux device selected. 
+
+## Project capture
+
+![Captura desde 2023-05-26 14-37-39](https://github.com/andreeaelenasamur/flutter-spotify-clone/assets/111053234/f9fdb636-752c-4e0f-a4bd-51ffe1d08de6)
+![Captura desde 2023-05-26 14-38-00](https://github.com/andreeaelenasamur/flutter-spotify-clone/assets/111053234/528ea7c9-8304-4029-ab94-2997a4cfe3d2)
