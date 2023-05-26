@@ -2,6 +2,8 @@ import 'dart:io';
 import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/data/data.dart';
+import 'package:spotify_clone/screens/playlist_screen.dart';
 import 'package:spotify_clone/widgets/side_menu.dart';
 
 void main() async {
@@ -72,6 +74,11 @@ class Shell extends StatelessWidget {
             child: Row(
               children: const [
                 SideMenu(),
+                Expanded(
+                  child: PlaylistScreen(
+                    playlist: likedSongsPlaylist,
+                  ),
+                )
               ],
             ),
           ),
